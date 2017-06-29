@@ -1,0 +1,10 @@
+package: github.com/DmitriyMV/toolsgetter
+import:
+- package: github.com/LK4D4/vndr
+  version: a7242f47926b89fb3c9df4d6e6f4fd5234839704
+- package: github.com/pkg/errors
+  version: c605e284fe17294bda444b34710735b29d1a9d90
+- package: golang.org/x/net
+  version: 1f9224279e98554b6a6432d4dd998a739f8b2b7c
+- package: golang.org/x/sync
+  version: f52d1811a62927559de87708c8913c1650ce4f26
