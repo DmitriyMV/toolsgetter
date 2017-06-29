@@ -5,10 +5,9 @@ import (
 	"log"
 	"os"
 	"os/exec"
+	"os/user"
 	"path/filepath"
 	"runtime"
-
-	"os/user"
 
 	"github.com/LK4D4/vndr/godl"
 	"github.com/pkg/errors"
