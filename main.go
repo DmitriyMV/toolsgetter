@@ -25,7 +25,7 @@ func parrallelBuild(paths ...string) error {
 			for _, toBuild := range toBuildSlice {
 				log.Println("Working with", toBuild)
 
-				cmd := exec.CommandContext(ctx, "go1.9beta2", "build", toBuild)
+				cmd := exec.CommandContext(ctx, "go", "build", toBuild)
 				_, err := cmd.Output()
 				log.Println("Finished with", toBuild)
 				if err != nil {
@@ -104,6 +104,9 @@ func main() {
 		"github.com/shurcooL/go", "",
 		"github.com/bradfitz/iter", "",
 		"golang.org/x/text", "",
+		"gopkg.in/alecthomas/kingpin.v2", "",
+		"github.com/alecthomas/template", "",
+		"github.com/alecthomas/units", "",
 	)
 	MustNoError(err)
 
@@ -120,6 +123,7 @@ func main() {
 		"golang.org/x/tools/cmd/guru",
 		"golang.org/x/tools/cmd/goimports",
 		"golang.org/x/tools/cmd/gotype",
+		"golang.org/x/tools/cmd/eg",
 		"github.com/golang/lint/golint",
 		"github.com/lukehoban/go-outline",
 		"github.com/newhook/go-symbols",
